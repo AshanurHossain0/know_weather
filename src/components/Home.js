@@ -36,7 +36,7 @@ function Home() {
                                 : (data.data.weather[0].main === "Clear")?(<FontAwesomeIcon id="icon" style={{ color: "#ff7700fe" }} icon={faSun} />)
                                 : (data.data.weather[0].main === "Clouds") ? (<FontAwesomeIcon id="icon" style={{ color: "#8b9393" }} icon={faCloud} />)
                                 : (data.data.weather[0].main === "Rain") ? (<FontAwesomeIcon id="icon" style={{ color: "white" }} icon={faCloudRain} />)
-                                : (data.data.weather[0].main === "Haze") ? (<FontAwesomeIcon id="icon" style={{ color: "grey" }} icon={faSmog} />)
+                                : (data.data.weather[0].main === "Haze") ? (<FontAwesomeIcon id="icon" style={{ color: "#ffffff9f" }} icon={faSmog} />)
                                 : (<FontAwesomeIcon id="icon" style={{ color: "#ff7700fe" }} icon={faSun} />)
                             }
                             <p style={{ fontSize: "1rem" }}>{data.data.weather[0].main}</p>
