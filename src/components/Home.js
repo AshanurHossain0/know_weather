@@ -31,7 +31,8 @@ function Home() {
                     <div className="box">
 
                         <div id="weather-con">
-                            {(new Date().getHours>18 || new Date().getHours<4) 
+                            {
+                                (new Date().getHours()>18 || new Date().getHours()<4) 
                                 ?(<FontAwesomeIcon id="icon" style={{ color: "#ff7700fe" }} icon={faMoon} />)
                                 : (data.data.weather[0].main === "Clear")?(<FontAwesomeIcon id="icon" style={{ color: "#ff7700fe" }} icon={faSun} />)
                                 : (data.data.weather[0].main === "Clouds") ? (<FontAwesomeIcon id="icon" style={{ color: "#8b9393" }} icon={faCloud} />)
